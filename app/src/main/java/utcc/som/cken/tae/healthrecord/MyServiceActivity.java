@@ -22,6 +22,14 @@ public class MyServiceActivity extends AppCompatActivity {
 
     } // onCreate
 
+    public void clickDateListView(View view) {
+
+        Intent objIntent = new Intent(MyServiceActivity.this, DetailListView.class);
+        objIntent.putExtra("NameUser", strNameUser);
+        startActivity(objIntent);
+
+    }
+
 
 
     public void clickDalySave(View view) {

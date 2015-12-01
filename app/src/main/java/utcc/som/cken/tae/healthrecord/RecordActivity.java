@@ -391,6 +391,9 @@ public class RecordActivity extends AppCompatActivity {
                     updateToMySQL();
 
                     Intent objIntent = new Intent(RecordActivity.this, DetailListView.class);
+
+                    objIntent.putExtra("NameUser", strNameUser);
+
                     startActivity(objIntent);
 
                 }catch (Exception e) {
