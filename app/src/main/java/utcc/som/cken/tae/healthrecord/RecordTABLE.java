@@ -15,6 +15,7 @@ public class RecordTABLE {
 
     public static final String RECORD_TABLE = "recordTABLE";
     public static final String COLUMN_ID_USER = "_id";
+    public static final String COLUMN_DATE = "Date";
     public static final String COLUMN_SLEEP = "Sleep";
     public static final String COLUMN_BREAKFAST = "Breakfast";
     public static final String COLUMN_LUNCH = "Lunch";
@@ -33,9 +34,10 @@ public class RecordTABLE {
 
     } // Constructor
 
-    public long addNewRecord(String strSleep, String strBreakfast, String strLunch, String strDinner, String strTypeExercise, String strTimeExercise, String strDrinkWater, String strWeight, String strNameUser) {
+    public long addNewRecord(String strDate,String strSleep, String strBreakfast, String strLunch, String strDinner, String strTypeExercise, String strTimeExercise, String strDrinkWater, String strWeight, String strNameUser) {
 
         ContentValues objContentValues = new ContentValues();
+        objContentValues.put(COLUMN_DATE, strDate);
         objContentValues.put(COLUMN_SLEEP, strSleep);
         objContentValues.put(COLUMN_BREAKFAST, strBreakfast);
         objContentValues.put(COLUMN_LUNCH, strLunch);

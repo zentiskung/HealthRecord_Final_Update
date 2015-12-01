@@ -182,6 +182,7 @@ public class MainActivity extends AppCompatActivity {
                             objUserTABLE.addNewUser(strUser, strPassword, strName, strAge, strSex, strWeight, strHeight,strEmail);
                             break;
                         default:
+                            String strDate = object.getString("Date");
                             String strSleep = object.getString("Sleep");
                             String strBreakfast = object.getString("Breakfast");
                             String strLunch = object.getString("Lunch");
@@ -192,7 +193,7 @@ public class MainActivity extends AppCompatActivity {
                             String strWeightRecord = object.getString("Weight");
                             String strNameUser = object.getString("NameUser");
 
-                            objRecordTABLE.addNewRecord(strSleep, strBreakfast, strLunch, strDinner, strTypeExercise, strTimeExercise, strDrinkWater, strWeightRecord, strNameUser);
+                            objRecordTABLE.addNewRecord(strDate, strSleep, strBreakfast, strLunch, strDinner, strTypeExercise, strTimeExercise, strDrinkWater, strWeightRecord, strNameUser);
                             break;
 
                     }
@@ -290,7 +291,7 @@ public class MainActivity extends AppCompatActivity {
     private void testAddValue() {
 
         objUserTABLE.addNewUser("User", "Password", "Name", "Age", "Sex", "Weight", "Height", "Email");
-        objRecordTABLE.addNewRecord("Sleep", "Breakfast", "Lunch", "Dinner", "TypeExercise", "TimeExercise", "DrinkWater", "Weight", "NameUser");
+        objRecordTABLE.addNewRecord("Date" ,"Sleep", "Breakfast", "Lunch", "Dinner", "TypeExercise", "TimeExercise", "DrinkWater", "Weight", "NameUser");
 
     }
 

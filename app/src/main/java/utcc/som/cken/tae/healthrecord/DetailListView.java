@@ -1,5 +1,6 @@
 package utcc.som.cken.tae.healthrecord;
 
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.StrictMode;
 import android.support.v7.app.AppCompatActivity;
@@ -46,8 +47,53 @@ public class DetailListView extends AppCompatActivity {
         //Show Name
         showName();
 
+        //Create ListView
+        createListView();
+
 
     } // Main Method
+
+    private void createListView() {
+
+        //Get Value from SQLite
+        SQLiteDatabase objSqLiteDatabase = openOrCreateDatabase("Health.db", MODE_PRIVATE, null);
+        Cursor objCursor = objSqLiteDatabase.rawQuery("SELECT * FROM recordTABLE WHERE NameUser = " + "'" + userNameString +"'", null);
+
+        objCursor.moveToFirst();
+        String[] strDate = new String[objCursor.getCount()];
+        String[] strSleep = new String[objCursor.getCount()];
+        String[] strBreakfast = new String[objCursor.getCount()];
+        String[] strLunch = new String[objCursor.getCount()];
+        String[] strDinner = new String[objCursor.getCount()];
+        String[] strTypeExercise = new String[objCursor.getCount()];
+        String[] strTimeExercise = new String[objCursor.getCount()];
+        String[] strDrinkWater = new String[objCursor.getCount()];
+        String[] strWeight = new String[objCursor.getCount()];
+        //จองหน่วยความจำของ cursor ที่ได้รับมา
+
+        for (int i=0; i<objCursor.getCount(); i++){
+
+            strDate[i] = objCursor.getString(objCursor.getColumnIndex("Date"));
+            strSleep[i] = objCursor.getString(objCursor.getColumnIndex("Sleep"));
+            strBreakfast[i] = objCursor.getString(objCursor.getColumnIndex("Breakfast"));
+            strLunch[i] = objCursor.getString(objCursor.getColumnIndex("Lunch"));
+            strDinner[i] = objCursor.getString(objCursor.getColumnIndex("Dinner"));
+            strTimeExercise[i] = objCursor.getString(objCursor.getColumnIndex("TypeExercise"));
+            strTimeExercise[i] = objCursor.getString(objCursor.getColumnIndex("TimeExercise"));
+            strDrinkWater[i] = objCursor.getString(objCursor.getColumnIndex("DrinkWater"));
+            strWeight[i] = objCursor.getString(objCursor.getColumnIndex("Weight"));
+
+            objCursor.moveToNext();
+        }//for
+
+        objCursor.close();//คืนหน่วยความจำ
+
+        MyAdapter objMyAdapter = new MyAdapter(DetailListView.this, strDate);
+        dateListView.setAdapter(objMyAdapter);
+
+
+
+    } // createListView
 
     private void bindWidget() {
         showNameTextView = (TextView) findViewById(R.id.txtNameDetail);
@@ -164,6 +210,7 @@ public class DetailListView extends AppCompatActivity {
                             objUserTABLE.addNewUser(strUser, strPassword, strName, strAge, strSex, strWeight, strHeight,strEmail);
                             break;
                         default:
+                            String strDate = object.getString("Date");
                             String strSleep = object.getString("Sleep");
                             String strBreakfast = object.getString("Breakfast");
                             String strLunch = object.getString("Lunch");
@@ -174,7 +221,7 @@ public class DetailListView extends AppCompatActivity {
                             String strWeightRecord = object.getString("Weight");
                             String strNameUser = object.getString("NameUser");
 
-                            objRecordTABLE.addNewRecord(strSleep, strBreakfast, strLunch, strDinner, strTypeExercise, strTimeExercise, strDrinkWater, strWeightRecord, strNameUser);
+                            objRecordTABLE.addNewRecord(strDate ,strSleep, strBreakfast, strLunch, strDinner, strTypeExercise, strTimeExercise, strDrinkWater, strWeightRecord, strNameUser);
                             break;
 
                     }
