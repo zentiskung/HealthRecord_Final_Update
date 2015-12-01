@@ -19,5 +19,7 @@
 
     <dimen name="margin">20dp</dimen>
 
+    <dimen name="image">200dp</dimen>
+
 
 </resources>
