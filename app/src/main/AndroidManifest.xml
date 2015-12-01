@@ -28,7 +28,8 @@
         <activity
             android:name=".MyServiceActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".TestActivity"></activity>
+        <activity android:name=".TestActivity" />
+        <activity android:name=".DetailListView"></activity>
     </application>
 
 </manifest>

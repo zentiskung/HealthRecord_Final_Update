@@ -383,8 +383,22 @@ public class RecordActivity extends AppCompatActivity {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 //Update to MySQL
-                uploadpic();
-                updateToMySQL();
+
+
+                try{
+
+                    uploadpic();
+                    updateToMySQL();
+
+                    Intent objIntent = new Intent(RecordActivity.this, DetailListView.class);
+                    startActivity(objIntent);
+
+                }catch (Exception e) {
+
+                    Toast.makeText(RecordActivity.this, "กรุณาใส่ข้อมูลให้ครบ", Toast.LENGTH_SHORT).show();
+
+                }
+
                 dialogInterface.dismiss();
             }
         });
