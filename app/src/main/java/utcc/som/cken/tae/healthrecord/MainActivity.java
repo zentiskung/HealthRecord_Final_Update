@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void synJSONtoSQLite() {
 
-//Setup Policy
+     //Setup Policy
         StrictMode.ThreadPolicy myPolicy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(myPolicy);
 
