@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="utcc.cken.tae.som.healthrecord.SignUpActivity"
+    android:background="@drawable/wall">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="15dp"
+        android:background="#82ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_signup"
+            android:id="@+id/textView2"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/h1"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="@dimen/edit_text"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtUserSign"
+            android:layout_gravity="center_horizontal"
+            android:hint="@string/User"
+            android:inputType="text" />
+
+        <EditText
+            android:layout_width="@dimen/edit_text"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtPassSign"
+            android:layout_gravity="center_horizontal"
+            android:hint="@string/Pass"
+            android:inputType="text" />
+
+        <EditText
+            android:layout_width="@dimen/edit_text"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtNameSign"
+            android:layout_gravity="center_horizontal"
+            android:hint="@string/name"
+            android:inputType="text" />
+
+        <EditText
+            android:layout_width="@dimen/edit_text"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtEmailSign"
+            android:layout_gravity="center_horizontal"
+            android:hint="@string/email"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sex"
+            android:id="@+id/textView3"
+            android:textSize="@dimen/h2"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp" />
+
+        <RadioGroup
+            android:layout_width="@dimen/edit_text"
+            android:layout_height="wrap_content"
+            android:id="@+id/ragSex"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/male"
+                android:id="@+id/radMale"
+                android:layout_weight="1"
+                android:checked="true" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/female"
+                android:id="@+id/radFemale"
+                android:layout_weight="1"
+                android:checked="false" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="@dimen/edit_text"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/age"
+                android:id="@+id/textView4"
+                android:textSize="@dimen/h2"
+                android:layout_weight="1" />
+
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/spnAge"
+                android:layout_weight="2" />
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="@dimen/edit_text"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtWeight"
+            android:layout_gravity="center_horizontal"
+            android:hint="@string/weight"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:layout_width="@dimen/edit_text"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtHeight"
+            android:layout_gravity="center_horizontal"
+            android:hint="@string/height"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clickSave"
+        android:text="@string/save"
+        android:id="@+id/button3"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

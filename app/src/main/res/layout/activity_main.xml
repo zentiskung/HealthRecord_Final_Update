@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/wall"
+    android:paddingTop="0dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="15dp"
+        android:background="#82fbf7f7"
+        android:layout_marginTop="59dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:id="@+id/textView"
+            android:phoneNumber="false"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/h1" />
+
+        <ImageView
+            android:layout_width="@dimen/logo"
+            android:layout_height="@dimen/logo"
+            android:id="@+id/imageView"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/logo4" />
+
+        <EditText
+            android:layout_width="@dimen/edit_text"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtUser"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:hint="@string/User"
+            android:inputType="text" />
+
+        <EditText
+            android:layout_width="@dimen/edit_text"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtPass"
+            android:layout_gravity="center_horizontal"
+            android:hint="@string/Pass"
+            android:inputType="textPassword"
+            android:layout_marginTop="0dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clickSignUp"
+            android:text="@string/Sign_up"
+            android:id="@+id/button"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clickSignIn"
+            android:text="@string/Sign_in"
+            android:id="@+id/button2"
+            android:layout_weight="1" />
+    </LinearLayout>
+</RelativeLayout>

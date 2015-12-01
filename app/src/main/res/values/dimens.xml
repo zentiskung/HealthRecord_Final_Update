@@ -1,0 +1,23 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--ชุดตัวอักษรที่ใช้-->
+    <dimen name="h1">30sp</dimen>
+    <dimen name="h1.1">25sp</dimen>
+    <dimen name="h2">20sp</dimen>
+    <dimen name="h3">15sp</dimen>
+    <dimen name="p">20sp</dimen>
+
+    <!--สำหรับรูปภาพต่างๆ-->
+    <dimen name="logo">120dp</dimen>
+    <dimen name="edit_text">230dp</dimen>
+    <dimen name="edit_text_short">80dp</dimen>
+    <dimen name="heigh_dimen">80dp</dimen>
+    <dimen name="heigh_dimen_short">20dp</dimen>
+
+    <dimen name="margin">20dp</dimen>
+
+
+</resources>

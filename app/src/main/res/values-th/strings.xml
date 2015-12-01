@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title">บันทึกสุขภาพ</string>
+    <string name="User">ผู้ใช้ :</string>
+    <string name="Pass">รหัสผ่าน :</string>
+    <string name="Sign_up">สมัครสมาชิก</string>
+    <string name="Sign_in">เข้าสู่ระบบ</string>
+    <string name="title_signup">สมัครสมาชิก</string>
+    <string name="male">ชาย</string>
+    <string name="name">ชื่อ</string>
+    <string name="weight">น้ำหนัก (กิโลกรัม)</string>
+    <string name="height">น้ำหนัก (เซนติเมตร)</string>
+    <string name="age">อายุ</string>
+    <string name="sex">เพศ</string>
+    <string name="female">หญิง</string>
+    <string name="email">อีเมลล์</string>
+    <string name="save">บันทึกข้อมูล</string>
+    <string name="title_record">บันทึกพฤติกรรมประจำวัน</string>
+    <string name="sleep">การนอน</string>
+    <string name="morning">อาหารเช้า</string>
+    <string name="lunch">อาหารกลางวัน</string>
+    <string name="dinner">อาหารเย็น</string>
+    <string name="time">เวลาออกกำลังกาย</string>
+    <string name="kilo">(กิโลกรัม)</string>
+    <string name="hour">(ชั่วโมง)</string>
+    <string name="exercise">ออกกำลัง กาย</string>
+    <string name="drink">การดื่มน้ำ (แก้ว)</string>
+    <string name="weightrecord">น้ำหนัก</string>
+    <string name="food">อาหาร</string>
+</resources>
