@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name" translatable="false">Health Record</string>
+    <string name="app_name" translatable="false">HRecord</string>
 
-    <string name="title">Health Record</string>
+    <string name="title">HRecord</string>
     <string name="User">User :</string>
     <string name="Pass">Password :</string>
     <string name="Sign_up">Sign up</string>
@@ -42,5 +42,32 @@
     <string name="swim">Swim</string>
     <string name="yoga">Yoga</string>
     <string name="other">Other</string>
+
+    <string name="history">History</string>
+
+    <string name="passwordfalse">Password False</string>
+    <string name="passwordfalse2">Please Try Again Password False</string>
+    <string name="havespace">Have Space</string>
+    <string name="havespace2">Please Fill All Every Blank</string>
+
+    <string name="userfalse">User False</string>
+    <string name="none">None </string>
+    <string name="indatabase"> in database</string>
+
+    <string name="changeuser">Change User</string>
+    <string name="user">User</string>
+    <string name="database_already_exists.">database already exists.</string>
+
+    <string name="drink2">DrinkWater</string>
+    <string name="glass">glass</string>
+
+    <string name="kilo2">kg</string>
+    <string name="hour2">hour</string>
+    <string name="weight2">Weight</string>
+
+    <string name="password">Password</string>
+    <string name="height2">Height</string>
+
+
 
 </resources>

@@ -63,13 +63,13 @@ public class SignUpActivity extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 switch (i) {
                     case R.id.radMale:
-                        sexString = "Male";
+                        sexString = getString(R.string.male);
                         break;
                     case R.id.radFemale:
-                        sexString = "Female";
+                        sexString = getString(R.string.female);
                         break;
                     default:
-                        sexString = "Male";
+                        sexString = getString(R.string.male);
                         break;
                 }
 
@@ -133,7 +133,7 @@ public class SignUpActivity extends AppCompatActivity {
 
             //Have Space
             MyDialog objMyDialog = new MyDialog();
-            objMyDialog.errorDialog(SignUpActivity.this, "มีช่องว่าง", "กรุณากรอกให้ครบ");
+            objMyDialog.errorDialog(SignUpActivity.this, getString(R.string.havespace), getString(R.string.havespace2));
 
         } else {
 
@@ -155,7 +155,7 @@ public class SignUpActivity extends AppCompatActivity {
 
             String[] strResult = objUserTABLE.searchUser(userString);
             //ค้นหาเจอ
-            objMyDialog.errorDialog(SignUpActivity.this, "เปลี่ยน User", "ฐานข้อมูลมี User " + strResult[1] + " นี้อยู่แล้ว");
+            objMyDialog.errorDialog(SignUpActivity.this, getString(R.string.changeuser), getString(R.string.user)+ " " + strResult[1] + " " +getString(R.string.database_already_exists_));
 
         } catch (Exception e) {
 
@@ -172,14 +172,14 @@ public class SignUpActivity extends AppCompatActivity {
         AlertDialog.Builder objBuilder = new AlertDialog.Builder(this);
         objBuilder.setIcon(R.drawable.icon_question);
         objBuilder.setTitle("Confirm Value");
-        objBuilder.setMessage("User = " + userString
-                + "\n" + "Password = " + passwordString
-                + "\n" + "Name = " + nameString
-                + "\n" + "Email = " + emailString
-                + "\n" + "Sex = " + sexString
-                + "\n" + "Age = " + ageString
-                + "\n" + "Weight = " + weightString
-                + "\n" + "Height = " + heightString);
+        objBuilder.setMessage(getString(R.string.user)+ " = " + userString
+                + "\n" + getString(R.string.password)+ " = " + passwordString
+                + "\n" + getString(R.string.name)+ " = " + nameString
+                + "\n" + getString(R.string.email)+ " = " + emailString
+                + "\n" + getString(R.string.sex)+ " = " + sexString
+                + "\n" + getString(R.string.age)+ " = " + ageString
+                + "\n" + getString(R.string.weight2)+ " = " + weightString
+                + "\n" + getString(R.string.height2)+ " = " + heightString);
         objBuilder.setCancelable(false); // Undo ไม่ได้
         objBuilder.setNegativeButton("No", new DialogInterface.OnClickListener() {
             @Override

@@ -4,10 +4,10 @@
     android:layout_height="wrap_content">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:id="@+id/imageView4"
-        android:src="@drawable/logo48"
+        android:src="@drawable/look"
         android:layout_margin="15dp" />
 
     <TextView
@@ -15,6 +15,6 @@
         android:layout_height="wrap_content"
         android:text="New Text"
         android:id="@+id/txtListShowDate"
-        android:textSize="@dimen/h1"
+        android:textSize="@dimen/h2"
         android:layout_gravity="center_vertical" />
 </LinearLayout>

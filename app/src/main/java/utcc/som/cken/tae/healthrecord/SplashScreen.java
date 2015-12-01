@@ -1,10 +1,9 @@
 package utcc.som.cken.tae.healthrecord;
 
 import android.content.Intent;
-import android.media.MediaPlayer;
+import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 
 public class SplashScreen extends AppCompatActivity {
 
@@ -23,8 +22,8 @@ public class SplashScreen extends AppCompatActivity {
         }, 8000);
 
         // Sound Effect
-        MediaPlayer introMediaPlayer = MediaPlayer.create(getBaseContext(), R.raw.intro_tata);
-        introMediaPlayer.start();
+        /*MediaPlayer introMediaPlayer = MediaPlayer.create(getBaseContext(), R.raw.intro_tata);
+        introMediaPlayer.start();*/
 
     } // Main Method
 

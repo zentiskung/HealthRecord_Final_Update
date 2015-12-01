@@ -8,7 +8,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="utcc.som.cken.tae.healthrecord.MyServiceActivity"
-    android:background="@drawable/wall">
+    android:background="@drawable/wall11">
 
     <LinearLayout
         android:orientation="vertical"
@@ -20,18 +20,18 @@
             android:layout_height="wrap_content"
             android:text="@string/my_service"
             android:id="@+id/textView11"
-            android:textSize="@dimen/h1"
+            android:textSize="@dimen/h2"
             android:layout_centerHorizontal="true"
-            android:layout_gravity="center_horizontal"
+            android:layout_gravity="center_horizontal|right"
             android:layout_marginBottom="30dp" />
 
         <ImageView
-            android:layout_width="200dp"
-            android:layout_height="170dp"
+            android:layout_width="170dp"
+            android:layout_height="150dp"
             android:onClick="clickDalySave"
             android:id="@+id/imageView2"
             android:layout_gravity="center_horizontal"
-            android:background="@drawable/p1" />
+            android:src="@drawable/record" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -43,17 +43,18 @@
             android:textStyle="bold" />
 
         <ImageView
-            android:layout_width="200dp"
-            android:layout_height="170dp"
+            android:layout_width="170dp"
+            android:layout_height="150dp"
             android:onClick="clickDateListView"
             android:id="@+id/imageView3"
             android:layout_gravity="center_horizontal"
-            android:src="@drawable/p2" />
+            android:src="@drawable/saveja"
+            android:layout_marginTop="20dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Show Date ListView"
+            android:text="@string/history"
             android:id="@+id/textView13"
             android:layout_gravity="center_horizontal"
             android:textSize="@dimen/h2"

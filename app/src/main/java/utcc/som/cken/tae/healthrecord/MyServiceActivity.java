@@ -45,7 +45,7 @@ public class MyServiceActivity extends AppCompatActivity {
         strNameUser = getIntent().getStringExtra("NameUser");
         strUser = getIntent().getStringExtra("Name");
         TextView userTextView = (TextView) findViewById(R.id.textView11);
-        userTextView.setText(strUser);
+        userTextView.setText(strNameUser);
 
     }
 

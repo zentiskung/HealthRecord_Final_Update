@@ -224,7 +224,7 @@ public class MainActivity extends AppCompatActivity {
 
             //Have Space
 
-            objMyDialog.errorDialog(MainActivity.this, "Have Space", "Please Fill All Every Blank");
+            objMyDialog.errorDialog(MainActivity.this, getString(R.string.havespace), getString(R.string.havespace2));
         } else {
 
             //No Space
@@ -250,13 +250,13 @@ public class MainActivity extends AppCompatActivity {
             } else {
                 //Password False
 
-                objMyDialog.errorDialog(MainActivity.this,"Password False", "Please Try Again Password False");
+                objMyDialog.errorDialog(MainActivity.this,getString(R.string.passwordfalse), getString(R.string.passwordfalse2));
 
             }
 
         } catch (Exception e) {
             MyDialog objMyDialog = new MyDialog();
-            objMyDialog.errorDialog(MainActivity.this, "User False", "ไม่มี " + strUser + " ใน ฐานข้อมูลของเรา");
+            objMyDialog.errorDialog(MainActivity.this, getString(R.string.userfalse), getString(R.string.none)+" " + strUser+ " "+ getString(R.string.indatabase));
 
         }
 

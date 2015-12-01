@@ -8,7 +8,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="utcc.som.cken.tae.healthrecord.DetailActivity"
-    android:background="@drawable/wall">
+    android:background="@drawable/wall13">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -36,7 +36,8 @@
                 android:id="@+id/txtDetailSleep"
                 android:layout_gravity="center_horizontal"
                 android:textSize="@dimen/h2"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp" />
 
             <ImageView
                 android:layout_width="@dimen/image"
@@ -47,11 +48,12 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Breakfast"
+                android:text="@string/morning"
                 android:id="@+id/textView21"
                 android:layout_gravity="center_horizontal"
                 android:textSize="@dimen/h2"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp" />
 
             <ImageView
                 android:layout_width="@dimen/image"
@@ -62,11 +64,12 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Lunch"
+                android:text="@string/lunch"
                 android:id="@+id/textView22"
                 android:layout_gravity="center_horizontal"
                 android:textSize="@dimen/h2"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp" />
 
             <ImageView
                 android:layout_width="@dimen/image"
@@ -77,11 +80,12 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Dinner"
+                android:text="@string/dinner"
                 android:id="@+id/textView23"
                 android:layout_gravity="center_horizontal"
                 android:textSize="@dimen/h2"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp" />
 
             <TextView
                 android:layout_width="wrap_content"

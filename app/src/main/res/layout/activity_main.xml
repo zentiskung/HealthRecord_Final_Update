@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@drawable/wall"
+    android:background="@drawable/bg600"
     android:paddingTop="0dp">
 
     <LinearLayout
@@ -11,9 +11,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:padding="15dp"
+        android:padding="20dp"
         android:background="#82fbf7f7"
         android:layout_marginTop="59dp">
+
+        <ImageView
+            android:layout_width="@dimen/logo"
+            android:layout_height="@dimen/logo"
+            android:id="@+id/imageView"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logoja" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -24,20 +31,12 @@
             android:layout_gravity="center_horizontal"
             android:textSize="@dimen/h1" />
 
-        <ImageView
-            android:layout_width="@dimen/logo"
-            android:layout_height="@dimen/logo"
-            android:id="@+id/imageView"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="0dp"
-            android:src="@drawable/logo4" />
-
         <EditText
             android:layout_width="@dimen/edit_text"
             android:layout_height="wrap_content"
             android:id="@+id/edtUser"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:hint="@string/User"
             android:inputType="text" />
 
@@ -71,6 +70,7 @@
             android:onClick="clickSignIn"
             android:text="@string/Sign_in"
             android:id="@+id/button2"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:layout_marginBottom="6.5dp" />
     </LinearLayout>
 </RelativeLayout>

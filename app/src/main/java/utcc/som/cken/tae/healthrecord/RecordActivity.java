@@ -335,7 +335,7 @@ public class RecordActivity extends AppCompatActivity {
 
     private void showTime() {
 
-        DateFormat objDateFormat = new SimpleDateFormat("yyyy/MM/dd HH/mm/ss");
+        DateFormat objDateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
         Date currentDate = new Date();
         currentTimeString = objDateFormat.format(currentDate);
         showTimeTextView.setText(currentTimeString);
@@ -363,14 +363,14 @@ public class RecordActivity extends AppCompatActivity {
         AlertDialog.Builder objBuilder = new AlertDialog.Builder(this);
         objBuilder.setIcon(R.drawable.icon_question);
         objBuilder.setTitle("Confirm Value");
-        objBuilder.setMessage("Sleep = " + sleepString
-                + "\n" + "Breakfast = " + breakfastname
-                + "\n" + "Lunch = " + lunchname
-                + "\n" + "Dinner = " + dinnername
-                + "\n" + "TypeExercise = " + typeExerciseString
-                + "\n" + "TimeExercise = " + timeExerciseString
-                + "\n" + "DrinkWater = " + drinkWaterString
-                + "\n" + "Weight = " + weightString);
+        objBuilder.setMessage(getString(R.string.sleep)+ " = " + sleepString
+                + "\n" + getString(R.string.morning)+ " = " + breakfastname
+                + "\n" + getString(R.string.lunch)+ " = " + lunchname
+                + "\n" + getString(R.string.dinner)+ " = " + dinnername
+                + "\n" + getString(R.string.exercise)+ " = " + typeExerciseString
+                + "\n" + getString(R.string.time)+ " = " + timeExerciseString
+                + "\n" + getString(R.string.drink2)+ " = " + drinkWaterString
+                + "\n" + getString(R.string.weight2)+ " = " + weightString);
         objBuilder.setCancelable(false); // Undo ไม่ได้
         objBuilder.setNegativeButton("No", new DialogInterface.OnClickListener() {
             @Override
@@ -398,7 +398,7 @@ public class RecordActivity extends AppCompatActivity {
 
                 }catch (Exception e) {
 
-                    Toast.makeText(RecordActivity.this, "กรุณาใส่ข้อมูลให้ครบ", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(RecordActivity.this, getString(R.string.havespace2), Toast.LENGTH_SHORT).show();
 
                 }
 

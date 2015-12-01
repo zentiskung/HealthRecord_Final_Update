@@ -65,19 +65,19 @@ public class DetailActivity extends AppCompatActivity {
         dateTextView.setText(strDate);
 
         String strSleep = getIntent().getStringExtra("Sleep");
-        sleepTextView.setText("Sleep = " + strSleep + " ชั่วโมง");
+        sleepTextView.setText(getString(R.string.sleep) +" = " + strSleep + " "+ getString(R.string.hour2));
 
         String strTypeExercise = getIntent().getStringExtra("TypeExercise");
-        typeExerciseTextView.setText("TypeExercise = " + strTypeExercise);
+        typeExerciseTextView.setText(getString(R.string.exercise) + " = " + strTypeExercise);
 
         String strTimeExercise = getIntent().getStringExtra("TimeExercise");
-        timeExerciseTextView.setText("TimeExercise = " + strTimeExercise + " ชั่วโมง");
+        timeExerciseTextView.setText(getString(R.string.time)+ " = " + strTimeExercise + " " + getString(R.string.hour2));
 
         String strDrinkWater = getIntent().getStringExtra("DrinkWater");
-        drinWaterTextView.setText("DrinkWater = " + strDrinkWater + " แก้ว" );
+        drinWaterTextView.setText(getString(R.string.drink2) + " = " + strDrinkWater + " "+ getString(R.string.glass));
 
         String strWeight = getIntent().getStringExtra("Weight");
-        weightTextView.setText("Weight = " + strWeight + " kg");
+        weightTextView.setText(getString(R.string.weight2)+ " = " + strWeight + " "+getString(R.string.kilo2));
 
     }//showTextView
 

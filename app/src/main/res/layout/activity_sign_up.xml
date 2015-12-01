@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="utcc.cken.tae.som.healthrecord.SignUpActivity"
-    android:background="@drawable/wall">
+    android:background="@drawable/wall13">
 
     <LinearLayout
         android:orientation="vertical"
@@ -37,7 +37,7 @@
             android:id="@+id/edtPassSign"
             android:layout_gravity="center_horizontal"
             android:hint="@string/Pass"
-            android:inputType="text" />
+            android:inputType="textPassword" />
 
         <EditText
             android:layout_width="@dimen/edit_text"
