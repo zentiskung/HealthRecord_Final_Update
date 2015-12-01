@@ -50,11 +50,14 @@ public class DetailListView extends AppCompatActivity {
         //Show Name
         showName();
 
+
         //Create ListView
         createListView();
 
 
     } // Main Method
+
+
 
     private void createListView() {
 

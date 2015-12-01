@@ -271,11 +271,11 @@ public class RecordActivity extends AppCompatActivity {
     private void createExerciseSpinner() {
 
         final String[] strExercise = new String[5];
-        strExercise[0] = "Run";
-        strExercise[1] = "Bicycle";
-        strExercise[2] = "Swim";
-        strExercise[3] = "Yoga";
-        strExercise[4] = "Other";
+        strExercise[0] = getString(R.string.run);
+        strExercise[1] = getString(R.string.bicycle);
+        strExercise[2] = getString(R.string.swim);
+        strExercise[3] = getString(R.string.yoga);
+        strExercise[4] = getString(R.string.other);
 
 
         ArrayAdapter<String> exerciseAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, strExercise);
