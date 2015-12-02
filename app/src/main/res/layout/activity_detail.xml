@@ -43,7 +43,8 @@
                 android:layout_width="@dimen/image"
                 android:layout_height="@dimen/image"
                 android:id="@+id/imvBreakfast"
-                android:layout_gravity="center_horizontal" />
+                android:layout_gravity="center_horizontal"
+                android:adjustViewBounds="true" />
 
             <TextView
                 android:layout_width="wrap_content"
